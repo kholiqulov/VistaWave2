@@ -1,0 +1,4 @@
+.card {
+   background-image: radial-gradient(101.02% 101.02% at 1.2% 0%, #393939 1.04%, #000000 100%);
+   box-shadow: inset 1px 1px 1px rgba(156, 156, 156, 0.5)
+}

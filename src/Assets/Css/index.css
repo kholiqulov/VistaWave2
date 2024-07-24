@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../Fonts/rubik-v26-latin-regular.woff2') format('woff2'), 
+       url('../Fonts/rubik-v26-latin-regular.woff') format('woff'); 
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../Fonts/rubik-v26-latin-500.woff2') format('woff2'), 
+       url('../Fonts/rubik-v26-latin-500.woff') format('woff'); 
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../Fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+       url('../Fonts/montserrat-v25-latin-regular.woff') format('woff'); 
+}
+/* montserrat-500italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: local(''),
+       url('../Fonts/montserrat-v25-latin-500italic.woff2') format('woff2'),
+       url('../Fonts/montserrat-v25-latin-500italic.woff') format('woff'); 
+}
+/* montserrat-600italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  src: local(''),
+       url('../Fonts/montserrat-v25-latin-600italic.woff2') format('woff2'),
+       url('../Fonts/montserrat-v25-latin-600italic.woff') format('woff'); 
+}
+/* montserrat-700italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../Fonts/montserrat-v25-latin-700italic.woff2') format('woff2'),
+       url('../Fonts/montserrat-v25-latin-700italic.woff') format('woff'); 
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* --- Scrol Styles --- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F2F2F2; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0081c6; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.container {
+  max-width: 1232px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.nav_link{
+  position: relative; 
+  padding: 10px 0;
+}
+
+.nav_link::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.5px;
+  background-color: #69E4A3;
+  left: 0;
+  bottom: 0;
+  transition: all .3s ease;
+}
+
+.nav_item:hover > .nav_link::before{
+  width: 100%;
+}

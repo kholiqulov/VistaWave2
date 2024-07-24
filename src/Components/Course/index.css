@@ -1,0 +1,7 @@
+.course {
+   background-image: url("../../Assets/Images/course-bg.png");
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   background-size: cover;
+   background-attachment: fixed;
+}

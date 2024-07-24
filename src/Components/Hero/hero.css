@@ -1,0 +1,4 @@
+.heroBottom {
+   background-image: linear-gradient(270deg, rgba(66, 66, 66, 0.2) 0%, rgba(66, 66, 66, 0.194) 76.04%, rgba(66, 66, 66, 0) 100%);
+   backdrop-filter: blur(23.6458px)
+}

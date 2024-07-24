@@ -1,0 +1,15 @@
+.userCard {
+   background-image: linear-gradient(180deg, #1C1C1C 0%, #2C2C2C 100%);
+}
+
+.swiper-button-prev {
+   color: #fff;
+   height: 10px !important;
+   width: 10px !important;
+}
+
+.swiper-button-next {
+   color: #fff;
+   height: 10px !important;
+   width: 10px !important;
+}

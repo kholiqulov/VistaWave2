@@ -1,0 +1,27 @@
+.backImg {
+   background-image: radial-gradient(101.02% 101.02% at 1.2% 0%, #393939 1.04%, #000000 100%);
+   box-shadow: 20px 10px 27px rgba(0, 0, 0, 0.6), inset 1px 1px 1px rgba(156, 156, 156, 0.5)
+}
+
+@media only screen and (max-width: 600px) {
+   .backImg {
+      background-image: none;
+      box-shadow: none
+   }
+ }
+
+.insertBg {
+   background-image: url("../../Assets/Images/whyus-bg.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center right;
+}
+
+@media only screen and (max-width: 600px) {
+   .insertBg {
+      background-image: url("../../Assets/Images/whyus-bg-mobile.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center right;
+   }
+}

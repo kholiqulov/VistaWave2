@@ -1,0 +1,13 @@
+.footer {
+   background-image: radial-gradient(101.02% 101.02% at 1.2% 0%, #535353 1.04%, #2B2B2B 100%);
+}
+
+@media only screen and (max-width: 600px) {
+   .footer {
+      background-image: radial-gradient(101.02% 101.02% at 1.2% 0%, #3E3E3E 1.04%, #000000 100%);
+   }
+ }
+
+#submitBtn {
+   background-image: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%);
+}
