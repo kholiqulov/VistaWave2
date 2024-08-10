@@ -53,36 +53,58 @@ function SiteBar({ isVisible, onClose }) {
               <img className="w-[103px] h-[50px]" src={Logo} alt="logo" />
             </Link>
             <button className="" onClick={onClose}>
-              <img className="w-[38px] h-[38px]" src={Close} alt="menu-closer" />
+              <img
+                className="w-[38px] h-[38px]"
+                src={Close}
+                alt="menu-closer"
+              />
             </button>
           </div>
           <ul className="my-[50px] flex flex-col items-center space-y-5">
             <li onClick={onClose}>
-              <Link className="font-normal text-white text-[25px] leading-[30px]" to="/second">
+              <Link
+                className="font-normal text-white text-[25px] leading-[30px]"
+                to="/"
+              >
                 About
               </Link>
             </li>
             <li onClick={onClose}>
-              <Link className="font-normal text-white text-[25px] leading-[30px]" to="/second">
+              <Link
+                className="font-normal text-white text-[25px] leading-[30px]"
+                to="/"
+              >
                 Portfolio
               </Link>
             </li>
             <li onClick={onClose}>
-              <Link className="font-normal text-white text-[25px] leading-[30px]" to="/second">
+              <Link
+                className="font-normal text-white text-[25px] leading-[30px]"
+                to="/"
+              >
                 Experience
               </Link>
             </li>
             <li onClick={onClose}>
-              <Link className="font-normal text-white text-[25px] leading-[30px]" to="/second">
+              <Link
+                className="font-normal text-white text-[25px] leading-[30px]"
+                to="/"
+              >
                 Contact Us
               </Link>
             </li>
           </ul>
           <span className="w-full h-[2px] bg-[#5A5A5A] inline-block"></span>
           <ul className="my-[50px] flex flex-col items-center space-y-5">
-            <li className="font-normal text-[#FDE753] text-[20px] leading-[30px]">Russian</li>
-            <li className="font-normal text-white text-[20px] leading-[30px]">Uzbek</li>
-            <li className="font-normal text-white text-[20px] leading-[30px]">English</li>
+            <li className="font-normal text-[#FDE753] text-[20px] leading-[30px]">
+              Russian
+            </li>
+            <li className="font-normal text-white text-[20px] leading-[30px]">
+              Uzbek
+            </li>
+            <li className="font-normal text-white text-[20px] leading-[30px]">
+              English
+            </li>
           </ul>
         </div>
       </div>

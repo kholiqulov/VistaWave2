@@ -142,7 +142,7 @@ function Header() {
                   to="/"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
-                  Portfolio
+                  Services
                 </Link>
               </li>
               <li className="nav_item">
@@ -150,7 +150,7 @@ function Header() {
                   to="/"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
-                  Experience
+                  Staff
                 </Link>
               </li>
               <li className="nav_item">

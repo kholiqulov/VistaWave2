@@ -1,13 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // ---> Css
 import "./offer.css";
 
 // ---> Images
-import Bar from "../../Assets/Images/bar.svg";
-import Briefcase from "../../Assets/Images/briefcase.svg";
-import Arrow from "../../Assets/Images/arrow-right-blue.svg";
+import Image1 from "../../Assets/Images/image1.png";
+import Image2 from "../../Assets/Images/image2.png";
+import Image3 from "../../Assets/Images/image3.png";
+import Image4 from "../../Assets/Images/image4.png";
+import Image5 from "../../Assets/Images/image5.png";
+import Image6 from "../../Assets/Images/image6.png";
+
+const datas = [
+  {
+    id: "0",
+    image: Image1,
+    title: "Development of landing pages",
+    text: "The landing page is formed in such a way as to briefly and clearly state the essence of the proposal, arouse interest, and convince the client that this is what he wants.",
+  },
+  {
+    id: "1",
+    image: Image2,
+    title: "Implementation of ERP systems",
+    text: "Slate helps you see how many more days you need to work to reach your financial goal.",
+  },
+  {
+    id: "2",
+    image: Image3,
+    title: "Development of mobile applications",
+    text: "Slate helps you see how many more days you need to work to reach your financial goal.",
+  },
+  {
+    id: "3",
+    image: Image4,
+    title: "IT StartUps",
+    text: "A corporate site is a site of a company, its official virtual representation on the Internet.",
+  },
+  {
+    id: "4",
+    image: Image5,
+    title: "IT consulting",
+    text: "Online trade is gaining momentum in Uzbekistan, we create online stores on ready-made engines, as well as unique stores, we connect national and foreign payment methods.",
+  },
+  {
+    id: "5",
+    image: Image6,
+    title: "Development of landing pages",
+    text: "The landing page is formed in such a way as to briefly and clearly state the essence of the proposal, arouse interest, and convince the client that this is what he wants.",
+  },
+];
 
 function Offer() {
   return (
@@ -18,138 +59,24 @@ function Offer() {
         </h2>
         <span className="block mx-auto mt-5 justify-center max-w-[125px] w-full h-[1px] bg-[#E2E2E2]"></span>
         <ul className="flex flex-wrap justify-center sm:gap-6 mt-[80px] space-y-[30px] sm:space-y-0">
-          <li className="card sm:max-w-[371px] w-full p-5">
-            <img className="w-[50px] h-[50px] sm:m-0" src={Briefcase} alt="card-icon" />
-            <h3 className="font-medium text-white text-[20px] leading-[24px] mt-[10px]">
-              UI/UX/Web developer
-            </h3>
-            <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-              amet.
-            </p>
-            <Link
-              className="flex items-center font-medium text-[#0075FF] text-[15px] leading-[22px] mt-[15px]"
-              to="/"
+          {datas.map((data) => (
+            <div
+              key={data?.id}
+              className="sm:flex items-start justify-center text-center sm:text-start space-y-5 sm:space-y-0 card sm:max-w-[530px] w-full space-x-5 p-6 rounded-lg"
             >
-              In detail
-              <img className="ml-2" src={Arrow} alt="arrow-icon" />
-            </Link>
-            <span className="inline-block w-full h-[1px] bg-[#E2E2E2]"></span>
-            <ul className="space-y-[10px] mt-[15px]">
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
+              <li className="w-1/2">
+                <h3 className="font-medium text-white text-[20px] leading-[24px] mt-[10px]">
+                  {data?.title}
+                </h3>
+                <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
+                  {data?.text}
+                </p>
               </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-            </ul>
-          </li>
-          <li className="card sm:max-w-[371px] w-full p-5">
-            <img className="w-[50px] h-[50px] sm:m-0" src={Bar} alt="card-icon" />
-            <h3 className="font-medium text-white text-[20px] leading-[24px] mt-[10px]">
-              UI/UX/Web designer
-            </h3>
-            <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-              amet.
-            </p>
-            <Link
-              className="flex items-center font-medium text-[#0075FF] text-[15px] leading-[22px] mt-[15px]"
-              to="/"
-            >
-              In detail
-              <img className="ml-2" src={Arrow} alt="arrow-icon" />
-            </Link>
-            <span className="inline-block w-full h-[1px] bg-[#E2E2E2]"></span>
-            <ul className="space-y-[10px] mt-[15px]">
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-            </ul>
-          </li>
-          <li className="card sm:max-w-[371px] w-full p-5">
-            <img className="w-[50px] h-[50px] sm:m-0" src={Bar} alt="card-icon" />
-            <h3 className="font-medium text-white text-[20px] leading-[24px] mt-[10px]">
-              UI/UX/Graphic designer
-            </h3>
-            <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-              amet.
-            </p>
-            <Link
-              className="flex items-center font-medium text-[#0075FF] text-[15px] leading-[22px] mt-[15px]"
-              to="/"
-            >
-              In detail
-              <img className="ml-2" src={Arrow} alt="arrow-icon" />
-            </Link>
-            <span className="inline-block w-full h-[1px] bg-[#E2E2E2]"></span>
-            <ul className="space-y-[10px] mt-[15px]">
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-            </ul>
-          </li>
-          <li className="card sm:max-w-[371px] w-full p-5">
-            <img className="w-[50px] h-[50px] sm:m-0" src={Briefcase} alt="card-icon" />
-            <h3 className="font-medium text-white text-[20px] leading-[24px] mt-[10px]">
-              UI/UX/SMM manager
-            </h3>
-            <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-              amet.
-            </p>
-            <Link
-              className="flex items-center font-medium text-[#0075FF] text-[15px] leading-[22px] mt-[15px]"
-              to="/"
-            >
-              In detail
-              <img className="ml-2" src={Arrow} alt="arrow-icon" />
-            </Link>
-            <span className="inline-block w-full h-[1px] bg-[#E2E2E2]"></span>
-            <ul className="space-y-[10px] mt-[15px]">
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-              <li className="font-medium text-[15px] leading-[18px] text-gray-300">
-                Web development
-              </li>
-            </ul>
-          </li>
+              <div className="flex justify-center w-[250px] sm:w-1/2">
+                <img src={data?.image} alt="card-icon" />
+              </div>
+            </div>
+          ))}
         </ul>
       </div>
     </section>
