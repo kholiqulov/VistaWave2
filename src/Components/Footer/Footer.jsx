@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { Link } from "react-router-dom";
 
 // ---> Css
@@ -9,6 +10,11 @@ import Logo from "../../Assets/Images/logov.png";
 import Telegram from "../../Assets/Images/telegram.svg";
 
 function Footer() {
+  // ------> Use aos animation library
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <footer className="footer mt-[100px] py-5">
       <div className="container flex flex-col sm:flex-row sm:items-center items-start sm:justify-between md:space-x-10">
@@ -26,22 +32,22 @@ function Footer() {
           </p>
         </div>
         <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-[50px] gap-y-5 mt-[30px] sm:mt-0">
-          <li>
+          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
             <a className="font-normal text-base text-gray-300" href="#about">
               About
             </a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
             <a className="font-normal text-base text-gray-300" href="#services">
               Services
             </a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
             <a className="font-normal text-base text-gray-300" href="#staff">
               Staff
             </a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
             <a className="font-normal text-base text-gray-300" href="#contact">
               Contract
             </a>

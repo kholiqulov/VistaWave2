@@ -170,11 +170,11 @@ function Header() {
             <img className="w-5 h-5 mr-2" src={Call} alt="call" />
             +998 97 013-03-22
           </a>
-          <div className="flex items-center justify-center space-x-5">
+          <div className="flex sm:hidden items-center justify-center space-x-5">
             <button
               id="wrapper"
               onClick={() => setDrop(!drop)}
-              className="sm:hidden relative z-0 flex items-center font-serif text-base text-white ml-16"
+              className="relative z-0 flex items-center font-serif text-base text-white ml-16"
             >
               {
                 <img
@@ -220,7 +220,7 @@ function Header() {
             </button>
             <button
               onClick={() => setShowModal(true)}
-              className="block sm:hidden"
+              className="block"
             >
               <img
                 className="w-[38px] h-[38px]"

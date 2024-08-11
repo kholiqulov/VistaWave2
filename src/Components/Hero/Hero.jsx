@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { Link } from "react-router-dom";
 
 // ---> Css
@@ -17,19 +18,39 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 function Hero() {
+  // ------> Use aos animation library
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="about">
       <div className="container mt-[56px] sm:mt-[84px]">
         <div className="flex flex-wrap justify-center lg:justify-between items-center pt-[150px] pb-[100px] sm:py-[120px] space-y-[50px] lg:space-y-0">
           <div className="md:max-w-[450px] w-full block mx-auto lg:m-0 text-center lg:text-start">
-            <button className="font-medium relative py-[5px] px-2 border text-white rounded-tr-[5px] rounded-bl-[5px] border-[#D2E66A] duration-300">
+            <button
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="50"
+              className="font-medium relative py-[5px] px-2 border text-white rounded-tr-[5px] rounded-bl-[5px] border-[#D2E66A] duration-300"
+            >
               Digital studio
               <span className="inline-block absolute max-w-[150px] w-full h-[35px] top-[5px] left-[5px] border border-[#D2E66A]  rounded-tr-[5px] rounded-bl-[5px] hover:top-0 hover:left-0 duration-300"></span>
             </button>
-            <h2 className="font-bold text-[50px] leading-[60px] mt-4 text-white">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="100"
+              className="font-bold text-[50px] leading-[60px] mt-4 text-white"
+            >
               VistaWave
             </h2>
-            <p className="font-normal text-[18px] leading-[28px] text-gray-300 mt-5">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="150"
+              className="font-normal text-[18px] leading-[28px] text-gray-300 mt-5"
+            >
               - is an experienced and passionate group of designers, developers
               and project managers. Every client we work with becomes a part of
               the team. Together we face the challenges and celebrate the
@@ -38,13 +59,21 @@ function Hero() {
               around.
             </p>
             <Link
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="200"
               className="py-[10px] px-[30px] border border-[#ABABAB] hover:bg-[#0081c6] block mx-auto lg:m-0 w-fit !mt-10 text-lg text-white duration-200 rounded-lg"
               href="/"
             >
               See more
             </Link>
           </div>
-          <div className="max-w-[560px] w-full">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            className="max-w-[560px] w-full"
+          >
             <img src={HeroIMage} alt="bg-for-hero" />
           </div>
         </div>

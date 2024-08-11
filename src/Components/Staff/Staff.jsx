@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { FaInstagram } from "react-icons/fa";
 import { PiTelegramLogoThin } from "react-icons/pi";
 import { CiLinkedin } from "react-icons/ci";
@@ -132,6 +133,11 @@ const datas = [
 ];
 
 function Me() {
+  // ------> Use aos animation library
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="staff"
@@ -145,6 +151,8 @@ function Me() {
         <ul className="hidden sm:flex flex-wrap justify-center mt-[130px] gap-y-[100px] gap-x-10">
           {datas.map((data) => (
             <li
+              data-aos="fade-up"
+              data-aos-duration="600"
               className={`userCard max-w-[300px] w-full text-center pb-10 rounded-xl shadow-lg shadow-gray-800`}
             >
               <img

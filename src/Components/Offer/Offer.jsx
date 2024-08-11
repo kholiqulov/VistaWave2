@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 // ---> Css
 import "./offer.css";
@@ -51,6 +52,11 @@ const datas = [
 ];
 
 function Offer() {
+  // ------> Use aos animation library
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="services" className="offer">
       <div className="container !pt-[100px] !pb-[20px] sm:!pt-[150px] sm:!pb-[20px]">
@@ -62,6 +68,8 @@ function Offer() {
           {datas.map((data) => (
             <div
               key={data?.id}
+              data-aos="fade-up"
+              data-aos-duration="600"
               className="sm:flex items-start justify-center text-center sm:text-start space-y-5 sm:space-y-0 card sm:max-w-[530px] w-full sm:space-x-5 p-6 rounded-lg"
             >
               <li className="w-full sm:w-1/2">

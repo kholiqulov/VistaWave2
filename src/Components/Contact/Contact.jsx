@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
+import AOS from "aos";
 import toast, { Toaster } from "react-hot-toast";
 
 // ---> Css
@@ -38,6 +39,11 @@ function Contact() {
       .finally(() => evt.target.reset());
   };
 
+  // ------> Use aos animation library
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="contact"
@@ -46,7 +52,7 @@ function Contact() {
       <div className="container">
         <Toaster />
         <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
             <h2 className="font-semibold text-center text-white text-[35px] leading-[35px]">
               Contact Us
             </h2>
@@ -118,7 +124,12 @@ function Contact() {
               </form>
             </div>
           </div>
-          <div className="!mt-[50px] lg:!mt-0 sm:mt-0 lg:ml-6">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="150"
+            className="!mt-[50px] lg:!mt-0 sm:mt-0 lg:ml-6"
+          >
             <div className="flex flex-col sm:flex-row items-center w-full">
               <iframe
                 title="Tashkent"
