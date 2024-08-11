@@ -73,36 +73,39 @@ function Hero() {
           <SwiperSlide className="flex flex-col">
             <div className="max-w-[332px] w-full">
               <h3 className="font-medium text-base leading-[19px] text-white">
-                Lorem ipsum dolor sit amet.
+                Custom Software Development.
               </h3>
               <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                We specialize in building custom software solutions tailored to
+                your business requirements, ensuring seamless integration,
+                enhanced efficiency, and scalable growth through innovative and
+                user-centric technologies.
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex flex-col">
             <div className="max-w-[332px] w-full">
               <h3 className="font-medium text-base leading-[19px] text-white">
-                Consectetur adipisicing elit. Velit, rerum.
+                Cloud Solutions and Services.
               </h3>
               <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                Our cloud solutions enable businesses to leverage scalable,
+                secure, and cost-effective computing resources, enhancing
+                operational efficiency, data security, and collaboration through
+                seamless cloud integration and management.
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex flex-col">
             <div className="max-w-[332px] w-full">
               <h3 className="font-medium text-base leading-[19px] text-white">
-                Officiis sit exercitationem eveniet, eos in consectetur.
+                Cybersecurity Expertise.
               </h3>
               <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                We offer robust cybersecurity services that protect your
+                business from evolving threats, ensuring data integrity,
+                compliance, and peace of mind through comprehensive security
+                assessments and advanced defense strategies.
               </p>
             </div>
           </SwiperSlide>

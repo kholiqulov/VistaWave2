@@ -11,7 +11,7 @@ import Telegram from "../../Assets/Images/telegram.svg";
 function Footer() {
   return (
     <footer className="footer mt-[100px] py-5">
-      <div className="container flex flex-col sm:flex-row sm:items-center items-start sm:justify-between">
+      <div className="container flex flex-col sm:flex-row sm:items-center items-start sm:justify-between md:space-x-10">
         <div>
           <Link to="/" className="block">
             <img
@@ -63,9 +63,9 @@ function Footer() {
             <button
               id="submitBtn"
               className="flex items-center justify-center ml-[5px] rounded-r-[10px] w-[48px] h-[41px] px-[10px] border"
-              type="submit"
+              type="button"
             >
-              <img className="" src={Telegram} alt="telegram" />
+              <img src={Telegram} alt="telegram" />
             </button>
           </form>
         </div>
