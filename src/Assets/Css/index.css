@@ -58,10 +58,15 @@
        url('../Fonts/montserrat-v25-latin-700italic.woff') format('woff'); 
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  background: #181818;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

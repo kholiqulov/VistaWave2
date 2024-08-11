@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 
 // ---> Images
-import Logo from "../../Assets/Images/logo.svg";
+import Logo from "../../Assets/Images/logov.png";
 import Close from "../../Assets/Images/close.svg";
 
 // ------> Css
@@ -41,7 +41,7 @@ function SiteBar({ isVisible, onClose }) {
         data-aos-duration="600"
         className={`${
           isVisible ? "left-0" : "-left-[100%] transition-all"
-        } w-full h-full absolute top-0 bg-[#535353] px-5 z-50 rounded-br-[50px]`}
+        } w-[80%] h-full absolute top-0 bg-[#181818] px-5 z-50 rounded-br-[50px]`}
       >
         <div className="mt-4">
           <div className="flex items-center justify-between">
@@ -50,7 +50,7 @@ function SiteBar({ isVisible, onClose }) {
               onClick={onClose}
               className="inline-block shadow-[0px 4px 4px rgba(0, 0, 0, 0.25)]"
             >
-              <img className="w-[103px] h-[50px]" src={Logo} alt="logo" />
+              <img className="w-[70px] h-[50px]" src={Logo} alt="logo" />
             </Link>
             <button className="" onClick={onClose}>
               <img
@@ -60,50 +60,38 @@ function SiteBar({ isVisible, onClose }) {
               />
             </button>
           </div>
-          <ul className="my-[50px] flex flex-col items-center space-y-5">
+          <ul className="my-[50px] flex flex-col space-y-5 px-5">
             <li onClick={onClose}>
-              <Link
+              <a
+                href="#about"
                 className="font-normal text-white text-[25px] leading-[30px]"
-                to="/"
               >
                 About
-              </Link>
+              </a>
             </li>
             <li onClick={onClose}>
-              <Link
+              <a
+                href="#services"
                 className="font-normal text-white text-[25px] leading-[30px]"
-                to="/"
               >
-                Portfolio
-              </Link>
+                Services
+              </a>
             </li>
             <li onClick={onClose}>
-              <Link
+              <a
+                href="#staff"
                 className="font-normal text-white text-[25px] leading-[30px]"
-                to="/"
               >
-                Experience
-              </Link>
+                Staff
+              </a>
             </li>
             <li onClick={onClose}>
-              <Link
+              <a
+                href="#contact"
                 className="font-normal text-white text-[25px] leading-[30px]"
-                to="/"
               >
                 Contact Us
-              </Link>
-            </li>
-          </ul>
-          <span className="w-full h-[2px] bg-[#5A5A5A] inline-block"></span>
-          <ul className="my-[50px] flex flex-col items-center space-y-5">
-            <li className="font-normal text-[#FDE753] text-[20px] leading-[30px]">
-              Russian
-            </li>
-            <li className="font-normal text-white text-[20px] leading-[30px]">
-              Uzbek
-            </li>
-            <li className="font-normal text-white text-[20px] leading-[30px]">
-              English
+              </a>
             </li>
           </ul>
         </div>

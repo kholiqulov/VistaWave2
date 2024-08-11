@@ -1,7 +1,7 @@
 import React from "react";
 
 // ---> Css
-import "./me.css";
+import "./staff.css";
 
 // ---> Images
 import Savlat from "../../Assets/Images/savlat.png";
@@ -17,10 +17,10 @@ import "swiper/css/navigation";
 
 function Me() {
   return (
-    <section className="container !mt-[50px]">
+    <section id="staff" className="container !pt-[100px] !pb-[20px] sm:!pt-[150px] sm:!pb-[20px]">
       <div className="pt-[30px]">
         <h2 className="font-bold text-[25px] leading-[30px] text-white text-center">
-          What do we offer?
+          Our team members
         </h2>
         <span className="block mx-auto mt-5 justify-center max-w-[125px] w-full h-[1px] bg-[#E2E2E2]"></span>
         <ul className="hidden sm:flex flex-wrap justify-center mt-[130px] gap-y-[75px] gap-x-6">

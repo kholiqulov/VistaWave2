@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../Me/Me";
+import Staff from "../Staff/Staff";
 import Hero from "../Hero/Hero"
 import Offer from "../Offer/Offer";
 import WhyUs from "../WhyUs/WhyUs";
@@ -10,7 +10,7 @@ function Main() {
       <Hero />
       <WhyUs />
       <Offer />
-      <Me />
+      <Staff />
     </div>
   );
 }

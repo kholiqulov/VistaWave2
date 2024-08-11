@@ -130,36 +130,36 @@ function Header() {
           <nav className="hidden md:block">
             <ul className="flex items-center space-x-[21px]">
               <li className="nav_item">
-                <Link
-                  to="/"
+                <a
+                  href="#about"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
                   About
-                </Link>
+                </a>
               </li>
               <li className="nav_item">
-                <Link
-                  to="/"
+                <a
+                  href="#services"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
                   Services
-                </Link>
+                </a>
               </li>
               <li className="nav_item">
-                <Link
-                  to="/"
+                <a
+                  href="#staff"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
                   Staff
-                </Link>
+                </a>
               </li>
               <li className="nav_item">
-                <Link
-                  to="/"
+                <a
+                  href="#contact"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
                   Contact Us
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

@@ -10,7 +10,7 @@ import Telegram from "../../Assets/Images/telegram.svg";
 
 function Footer() {
   return (
-    <footer className="footer mt-[50px] py-5">
+    <footer className="footer mt-[100px] py-5">
       <div className="container flex flex-col sm:flex-row sm:items-center items-start sm:justify-between">
         <div>
           <Link to="/" className="block">
@@ -27,33 +27,23 @@ function Footer() {
         </div>
         <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-[50px] gap-y-5 mt-[30px] sm:mt-0">
           <li>
-            <a className="font-normal text-base text-gray-300" href="/">
+            <a className="font-normal text-base text-gray-300" href="#about">
               About
             </a>
           </li>
           <li>
-            <a className="font-normal text-base text-gray-300" href="/">
-              Portfolio
+            <a className="font-normal text-base text-gray-300" href="#services">
+              Services
             </a>
           </li>
           <li>
-            <a className="font-normal text-base text-gray-300" href="/">
-              Certificat
+            <a className="font-normal text-base text-gray-300" href="#staff">
+              Staff
             </a>
           </li>
           <li>
-            <a className="font-normal text-base text-gray-300" href="/">
+            <a className="font-normal text-base text-gray-300" href="#contact">
               Contract
-            </a>
-          </li>
-          <li>
-            <a className="font-normal text-base text-gray-300" href="/">
-              Contact
-            </a>
-          </li>
-          <li>
-            <a className="font-normal text-base text-gray-300" href="/">
-              Sertificat
             </a>
           </li>
         </ul>

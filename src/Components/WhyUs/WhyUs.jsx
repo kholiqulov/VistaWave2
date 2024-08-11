@@ -10,7 +10,7 @@ import Briefcase from "../../Assets/Images/briefcase.svg";
 function WhyUs() {
   return (
     <section className="container">
-      <div className="backImg">
+      <div className="backImg md:mt-[100px]">
         <div className="insertBg sm:px-[50px] pt-[50px] pb-[75px] sm:pb-[90px]">
           <h2 className="font-bold text-[25px] leading-[30px] text-white text-center sm:text-start">
             Why Us ?

@@ -52,8 +52,8 @@ const datas = [
 
 function Offer() {
   return (
-    <section className="offer mt-[50px]">
-      <div className="container sm:!p-[50px]">
+    <section id="services" className="offer">
+      <div className="container !pt-[100px] !pb-[20px] sm:!pt-[150px] sm:!pb-[20px]">
         <h2 className="font-bold text-[25px] leading-[30px] text-white text-center">
           What do we offer?
         </h2>
@@ -62,9 +62,9 @@ function Offer() {
           {datas.map((data) => (
             <div
               key={data?.id}
-              className="sm:flex items-start justify-center text-center sm:text-start space-y-5 sm:space-y-0 card sm:max-w-[530px] w-full space-x-5 p-6 rounded-lg"
+              className="sm:flex items-start justify-center text-center sm:text-start space-y-5 sm:space-y-0 card sm:max-w-[530px] w-full sm:space-x-5 p-6 rounded-lg"
             >
-              <li className="w-1/2">
+              <li className="w-full sm:w-1/2">
                 <h3 className="font-medium text-white text-[20px] leading-[24px] mt-[10px]">
                   {data?.title}
                 </h3>
@@ -72,7 +72,7 @@ function Offer() {
                   {data?.text}
                 </p>
               </li>
-              <div className="flex justify-center w-[250px] sm:w-1/2">
+              <div className="flex justify-center w-full sm:w-1/2">
                 <img src={data?.image} alt="card-icon" />
               </div>
             </div>

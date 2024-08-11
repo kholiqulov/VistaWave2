@@ -18,10 +18,10 @@ import "swiper/css/navigation";
 
 function Hero() {
   return (
-    <section>
-      <div className="container hero2 mt-[56px] sm:mt-[84px] ">
-        <div className="flex justify-between items-center py-[150px]">
-          <div className="md:max-w-[450px] w-full">
+    <section id="about">
+      <div className="container mt-[56px] sm:mt-[84px]">
+        <div className="flex flex-wrap justify-center lg:justify-between items-center pt-[150px] pb-[100px] sm:py-[120px] space-y-[50px] lg:space-y-0">
+          <div className="md:max-w-[450px] w-full block mx-auto lg:m-0 text-center lg:text-start">
             <button className="font-medium relative py-[5px] px-2 border text-white rounded-tr-[5px] rounded-bl-[5px] border-[#D2E66A] duration-300">
               Digital studio
               <span className="inline-block absolute max-w-[150px] w-full h-[35px] top-[5px] left-[5px] border border-[#D2E66A]  rounded-tr-[5px] rounded-bl-[5px] hover:top-0 hover:left-0 duration-300"></span>
@@ -38,7 +38,7 @@ function Hero() {
               around.
             </p>
             <Link
-              className="py-[10px] px-[30px] border border-[#ABABAB] hover:bg-[#0081c6] mt-10 block w-fit text-lg text-white duration-200 rounded-lg"
+              className="py-[10px] px-[30px] border border-[#ABABAB] hover:bg-[#0081c6] block mx-auto lg:m-0 w-fit !mt-10 text-lg text-white duration-200 rounded-lg"
               href="/"
             >
               See more
@@ -49,40 +49,6 @@ function Hero() {
           </div>
         </div>
       </div>
-      {/* <div className="heroBottom absolute bottom-0 left-0 w-full hidden md:block p-5">
-        <ul className="container flex flex-col sm:flex-row items-center justify-between">
-          <li className="max-w-[332px] w-full">
-            <h3 className="font-medium text-base leading-[19px] text-white">
-              Lorem ipsum dolor sit amet.
-            </h3>
-            <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-          <li className="max-w-[332px] w-full">
-            <h3 className="font-medium text-base leading-[19px] text-white">
-              Lorem ipsum dolor sit amet.
-            </h3>
-            <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-          <li className="max-w-[332px] w-full">
-            <h3 className="font-medium text-base leading-[19px] text-white">
-              Lorem ipsum dolor sit amet.
-            </h3>
-            <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-        </ul>
-      </div> */}
       <div className="block md:hidden heroBottom">
         <Swiper
           loop={true}
