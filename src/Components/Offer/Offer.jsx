@@ -85,7 +85,7 @@ function Offer() {
                 </p>
               </li>
               <div className="flex justify-center w-full sm:w-[40%]">
-                <img src={data?.image} alt="card-icon" />
+                <img className="object-cover"  src={data?.image} alt="card-icon" />
               </div>
             </div>
           ))}
