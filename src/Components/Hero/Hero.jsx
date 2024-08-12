@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 // ---> Css
 import "./hero.css";
@@ -23,6 +24,9 @@ function Hero() {
     AOS.init();
   }, []);
 
+  // eslint-disable-next-line no-unused-vars
+  const { t } = useTranslation();
+
   return (
     <section id="about">
       <div className="container mt-[56px] sm:mt-[84px]">
@@ -34,7 +38,7 @@ function Hero() {
               data-aos-delay="50"
               className="font-medium relative py-[5px] px-2 border text-white rounded-tr-[5px] rounded-bl-[5px] border-[#D2E66A] duration-300"
             >
-              Digital studio
+              {t("hero.studio")}
               <span className="inline-block absolute max-w-[150px] w-full h-[35px] top-[5px] left-[5px] border border-[#D2E66A]  rounded-tr-[5px] rounded-bl-[5px] hover:top-0 hover:left-0 duration-300"></span>
             </button>
             <h2
@@ -49,14 +53,9 @@ function Hero() {
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay="150"
-              className="font-normal text-[18px] leading-[28px] text-gray-300 mt-5"
+              className="font-normal text-[18px] leading-[28px] text-white mt-5"
             >
-              - is an experienced and passionate group of designers, developers
-              and project managers. Every client we work with becomes a part of
-              the team. Together we face the challenges and celebrate the
-              victories. Our small team is active in the creative community,
-              endlessly interested in what’s next, and generally pleasant to be
-              around.
+              {t("hero.text")}
             </p>
             <Link
               data-aos="fade-up"
@@ -65,7 +64,7 @@ function Hero() {
               className="py-[10px] px-[30px] border border-[#ABABAB] hover:bg-[#0081c6] block mx-auto lg:m-0 w-fit !mt-10 text-lg text-white duration-200 rounded-lg"
               href="/"
             >
-              See more
+              {t("hero.see")}
             </Link>
           </div>
           <div
@@ -101,40 +100,31 @@ function Hero() {
         >
           <SwiperSlide className="flex flex-col">
             <div className="max-w-[332px] w-full">
-              <h3 className="font-medium text-base leading-[19px] text-white">
-                Custom Software Development.
+              <h3 className="font-medium text-xl leading-[26px] text-white">
+                {t("hero.carousel.title1")}
               </h3>
-              <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-                We specialize in building custom software solutions tailored to
-                your business requirements, ensuring seamless integration,
-                enhanced efficiency, and scalable growth through innovative and
-                user-centric technologies.
+              <p className="font-normal text-sm leading-[24px] text-white mt-[15px]">
+                {t("hero.carousel.text1")}
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex flex-col">
             <div className="max-w-[332px] w-full">
-              <h3 className="font-medium text-base leading-[19px] text-white">
-                Cloud Solutions and Services.
+              <h3 className="font-medium text-xl leading-[26px] text-white">
+                {t("hero.carousel.title2")}
               </h3>
-              <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-                Our cloud solutions enable businesses to leverage scalable,
-                secure, and cost-effective computing resources, enhancing
-                operational efficiency, data security, and collaboration through
-                seamless cloud integration and management.
+              <p className="font-normal text-sm leading-[24px] text-white mt-[15px]">
+                {t("hero.carousel.text2")}
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex flex-col">
             <div className="max-w-[332px] w-full">
-              <h3 className="font-medium text-base leading-[19px] text-white">
-                Cybersecurity Expertise.
+              <h3 className="font-medium text-xl leading-[26px] text-white">
+                {t("hero.carousel.title3")}
               </h3>
-              <p className="font-normal text-sm leading-[24px] text-gray-300 mt-[15px]">
-                We offer robust cybersecurity services that protect your
-                business from evolving threats, ensuring data integrity,
-                compliance, and peace of mind through comprehensive security
-                assessments and advanced defense strategies.
+              <p className="font-normal text-sm leading-[24px] text-white mt-[15px]">
+                {t("hero.carousel.text3")}
               </p>
             </div>
           </SwiperSlide>

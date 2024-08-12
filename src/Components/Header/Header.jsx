@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SiteBar from "../Modal/Modal";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 // ---> Images
 // import Logo from "../../Assets/Images/logo.svg";
@@ -18,12 +19,14 @@ function Header() {
   // ---> Dropdown
   const [drop, setDrop] = useState(false);
   // ---> Change Languages
-  const [uzb, setUzb] = useState(true);
+  const [uzb, setUzb] = useState(false);
   const [rus, setRus] = useState(false);
-  const [eng, setEng] = useState(false);
-  const [uzbFlag, setFlag] = useState(Uzb);
+  const [eng, setEng] = useState(true);
+  const [uzbFlag, setFlag] = useState(Eng);
   // ---> Others
   const [down, setDown] = useState(false);
+  // eslint-disable-next-line no-unused-vars
+  const { t, i18n } = useTranslation();
 
   // ---> Change Language
   const ChangeUzb = () => {
@@ -31,18 +34,21 @@ function Header() {
     setRus(false);
     setEng(false);
     setFlag(Uzb);
+    i18n.changeLanguage("uz");
   };
   const ChangeRus = () => {
     setRus(true);
     setUzb(false);
     setEng(false);
     setFlag(Rus);
+    i18n.changeLanguage("ru");
   };
   const ChangeEng = () => {
     setEng(true);
     setRus(false);
     setUzb(false);
     setFlag(Eng);
+    i18n.changeLanguage("en");
   };
 
   // ---> Close dropdown
@@ -91,7 +97,7 @@ function Header() {
                   alt="countries-flag"
                 />
               }
-              {uzb ? "UZB" : rus ? "RUS" : eng ? "ENG" : ""}
+              {uzb ? "Uzb" : rus ? "Rus" : eng ? "Eng" : ""}
               <img
                 className={`w-6 h-6 ml-1 duration-200 ${
                   drop ? "-rotate-180" : ""
@@ -134,7 +140,7 @@ function Header() {
                   href="#about"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
-                  About
+                  {t("header.navbar.about")}
                 </a>
               </li>
               <li className="nav_item">
@@ -142,7 +148,7 @@ function Header() {
                   href="#services"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
-                  Services
+                  {t("header.navbar.services")}
                 </a>
               </li>
               <li className="nav_item">
@@ -150,7 +156,7 @@ function Header() {
                   href="#staff"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
-                  Staff
+                  {t("header.navbar.staff")}
                 </a>
               </li>
               <li className="nav_item">
@@ -158,7 +164,7 @@ function Header() {
                   href="#contact"
                   className="nav_link font-serif text-lg text-white tracking-[0.48px]"
                 >
-                  Contact Us
+                  {t("header.navbar.contact")}
                 </a>
               </li>
             </ul>
@@ -183,7 +189,7 @@ function Header() {
                   alt="countries-flag"
                 />
               }
-              {uzb ? "UZB" : rus ? "RUS" : eng ? "ENG" : ""}
+              {uzb ? "Uzb" : rus ? "Rus" : eng ? "Eng" : ""}
               <img
                 className={`w-6 h-6 ml-1 duration-200 ${
                   drop ? "-rotate-180" : ""
@@ -218,10 +224,7 @@ function Header() {
                 </ul>
               ) : null}
             </button>
-            <button
-              onClick={() => setShowModal(true)}
-              className="block"
-            >
+            <button onClick={() => setShowModal(true)} className="block">
               <img
                 className="w-[38px] h-[38px]"
                 src={Burger}

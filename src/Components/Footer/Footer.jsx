@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 // ---> Css
 import "./footer.css";
@@ -15,8 +16,11 @@ function Footer() {
     AOS.init();
   }, []);
 
+  // eslint-disable-next-line no-unused-vars
+  const { t } = useTranslation();
+
   return (
-    <footer className="footer mt-[100px] py-5">
+    <footer className="footer mt-[100px] py-7">
       <div className="container flex flex-col sm:flex-row sm:items-center items-start sm:justify-between md:space-x-10">
         <div>
           <Link to="/" className="block">
@@ -26,45 +30,45 @@ function Footer() {
               alt="logo"
             />
           </Link>
-          <p className="font-medium text-[15px] leading-[18px] text-gray-300 mt-[17px] max-w-[300px] w-full">
-            <strong>VistaWave</strong> - empowers large enterprises to establish
-            a strong online presence through innovative digital solutions.
+          <p className="font-medium text-[15px] text-white leading-5 mt-[17px] max-w-[300px] w-full">
+            <strong className="text-xl tracking-[4px]">VistaWave - </strong>
+            {t("footer.left_text")}
           </p>
         </div>
         <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-[50px] gap-y-5 mt-[30px] sm:mt-0">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-            <a className="font-normal text-base text-gray-300" href="#about">
-              About
+          <li>
+            <a className="font-normal text-base text-white" href="#about">
+              {t("header.navbar.about")}
             </a>
           </li>
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <a className="font-normal text-base text-gray-300" href="#services">
-              Services
+          <li>
+            <a className="font-normal text-base text-white" href="#services">
+              {t("header.navbar.services")}
             </a>
           </li>
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
-            <a className="font-normal text-base text-gray-300" href="#staff">
-              Staff
+          <li>
+            <a className="font-normal text-base text-white" href="#staff">
+              {t("header.navbar.staff")}
             </a>
           </li>
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-            <a className="font-normal text-base text-gray-300" href="#contact">
-              Contract
+          <li>
+            <a className="font-normal text-base text-white" href="#contact">
+              {t("header.navbar.contact")}
             </a>
           </li>
         </ul>
         <div className="sm:max-w-[282px] w-full mt-[30px] sm:mt-0">
-          <h3 className="font-semibold text-base text-gray-300">
-            Congratulation!
+          <h3 className="font-semibold text-base text-white">
+            {t("footer.right_title")}
           </h3>
-          <p className="font-medium text-[15px] leading-[18px] text-gray-300 mt-[5px]">
-            Join our mailing list. We write rarely, but only the best content.
+          <p className="font-medium text-[15px] leading-[18px] text-white mt-[5px]">
+            {t("footer.right_text")}
           </p>
           <form className="flex items-center mt-[15px]">
             <input
-              className="h-[41px] text-sm bg-[#444444] text-gray-300 border-[0.5px] border-[#B8B8B8] rounded-l-[20px] px-4 outline-none w-full"
+              className="h-[41px] text-sm bg-[#444444] text-white  border-[0.5px] border-[#B8B8B8] rounded-l-[20px] px-4 outline-none w-full"
               type="text"
-              placeholder="Your email address"
+              placeholder={t("footer.placeholder")}
             />
             <button
               id="submitBtn"

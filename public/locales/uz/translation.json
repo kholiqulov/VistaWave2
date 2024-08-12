@@ -1,0 +1,80 @@
+{
+  "header": {
+    "navbar": {
+      "about": "Biz haqimizda",
+      "services": "Xizmatlar",
+      "staff": "Xodimlar",
+      "contact": "Aloqa"
+    }
+  },
+  "hero": {
+    "studio": "Raqamli studiya",
+    "text": "- tajribali va ishtiyoqli dizaynerlar, ishlab chiquvchilar va loyiha menejerlari guruhi. Biz ishlayotgan har bir mijoz jamoaning bir qismiga aylanadi. Biz birgalikda qiyinchiliklarga duch kelamiz va g'alabalarni nishonlaymiz. Bizning kichik jamoamiz ijodiy hamjamiyatda faol, keyingi voqealar bilan cheksiz qiziqadi va umuman olganda, atrofda bo'lish yoqimli.",
+    "see": "Ko'proq",
+    "carousel": {
+      "title1": "Shaxsiy dasturiy ta'minotni ishlab chiqish.",
+      "text1": "Biz innovatsion va foydalanuvchiga yoʻnaltirilgan texnologiyalar orqali uzluksiz integratsiyani, yuqori samaradorlikni va kengaytiriladigan oʻsishni taʼminlovchi biznes talablaringizga moslashtirilgan maxsus dasturiy yechimlarni yaratishga ixtisoslashganmiz.",
+      "title2": "Zamonaviy yechimlar va xizmatlar.",
+      "text2": "Bizning bulutli yechimlarimiz korxonalarga kengaytiriladigan, xavfsiz va tejamkor hisoblash resurslaridan foydalanish imkonini beradi, bulutli integratsiya va boshqaruvni uzluksiz boshqarish orqali operatsion samaradorlikni, maʼlumotlar xavfsizligini va hamkorlikni oshiradi.",
+      "title3": "Kiberxavfsizlik bo'yicha ekspertiza.",
+      "text3": "Biz biznesingizni rivojlanayotgan tahdidlardan himoya qiladigan, xavfsizlikni har tomonlama baholash va ilg‘or mudofaa strategiyalari orqali ma’lumotlar yaxlitligi, muvofiqlik va xotirjamlikni ta’minlaydigan mustahkam kiberxavfsizlik xizmatlarini taklif etamiz."
+    }
+  },
+  "whyus": {
+    "title": "Nega biz?",
+    "text1": "Biz sizning biznesingizning noyob ehtiyojlarini qondirish uchun mo'ljallangan, o'sish, samaradorlik va sanoatingizda raqobatbardosh ustunlikni oshirish uchun innovatsion yondashuvlardan foydalangan holda moslashtirilgan IT-yechimlarni taqdim etamiz.",
+    "text2": "Bizning jamoamizning turli sohalardagi katta tajribasi sizning biznes maqsadlaringizga haqiqiy qiymat va strategik muvofiqlikni ta'minlab, sizning aniq muammolaringizga moslashtirilgan echimlarni taqdim etishimizni ta'minlaydi.",
+    "text3": "Biz IT yechimlarimiz biznesingiz rivojlanib, o'sib borishi bilan ehtiyojlaringizni qondirishda davom etishini ta'minlash uchun har qadamda siz bilan hamkorlik qilib, mijozlarga ajoyib yordamni taklif qilamiz."
+  },
+  "offer": {
+    "title": "Biz nima taklif qilamiz?",
+    "subtitle1": "Ochilish sahifalarini ishlab chiqish",
+    "text1": "Ochilish sahifasi taklifning mohiyatini qisqacha va aniq bayon qiladigan, qiziqish uyg'otadigan va mijozni u xohlagan narsaga ishontiradigan tarzda tuzilgan.",
+    "subtitle2": "ERP tizimlarini joriy qilish",
+    "text2": "Slate moliyaviy maqsadingizga erishish uchun yana qancha kun ishlashingiz kerakligini ko'rishga yordam beradi.",
+    "subtitle3": "Mobil ilovalarni ishlab chiqish",
+    "text3": "Slate moliyaviy maqsadingizga erishish uchun yana qancha kun ishlashingiz kerakligini ko'rishga yordam beradi.",
+    "subtitle4": "IT StartUps",
+    "text4": "Korporativ sayt - bu kompaniyaning sayti, uning Internetdagi rasmiy virtual vakolatxonasi.",
+    "subtitle5": "IT konsalting",
+    "text5": "O'zbekistonda onlayn savdo jadal rivojlanmoqda, biz tayyor dvigatellarda onlayn-do'konlar, shuningdek, noyob do'konlar yaratamiz, milliy va xorijiy to'lov usullarini bog'laymiz.",
+    "subtitle6": "Ochilish sahifalarini ishlab chiqish",
+    "text6": "Ochilish sahifasi taklifning mohiyatini qisqacha va aniq bayon qiladigan, qiziqish uyg'otadigan va mijozni u xohlagan narsaga ishontiradigan tarzda tuzilgan."
+  },
+  "staff": {
+    "title": "Bizning jamoamiz a'zolari.",
+    "subtitle1": "Nodirbek Kholiqulov",
+    "text1": "Co-Founder & COO",
+    "subtitle2": "Shokhruz Abdugaffarov",
+    "text2": "Co-Founder & CEO",
+    "subtitle3": "Nozimjon Keldiyev",
+    "text3": "Full-Stack developer",
+    "subtitle4": "Nurillo Suyunboyev",
+    "text4": "Frontend developer",
+    "subtitle5": "Ilhomjon Burxonov",
+    "text5": "Frontend developer",
+    "subtitle6": "Ibrokhim Ismailov",
+    "text6": "Frontend developer",
+    "subtitle7": "Shayboniy Abduvaliev",
+    "text7": "Product manageri",
+    "subtitle8": "Axror Jo'raev",
+    "text8": "Backend developer",
+    "subtitle9": "Zarif Sayfiddinov",
+    "text9": "Hisobchi"
+  },
+  "contact": {
+    "title": "Biz bilan bog'lanish",
+    "text": "Iltimos! Biz bilan bog'lanishingiz uchun ushbu shaklni to'ldiring. Bu bizni olishning juda tez yo'lidir!",
+    "full_name": "To'liq ism",
+    "number": "Telefon raqam",
+    "comment": "Izoh",
+    "submit": "Jo'natish",
+    "address": "Sergili, Toshkent, Uzbekiston"
+  },
+  "footer": {
+    "left_text": "yirik korxonalarga innovatsion raqamli yechimlar orqali kuchli onlayn ishtirok etish imkoniyatini beradi.",
+    "right_title": "Tabriklaymiz!",
+    "right_text": "Pochta ro'yxatimizga qo'shiling. Biz kamdan-kam yozamiz, lekin faqat eng yaxshi kontent.",
+    "placeholder": "Elektron pochta manzilingiz"
+  }
+}

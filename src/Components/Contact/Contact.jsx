@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
 import AOS from "aos";
+import axios from "axios";
+import { useTranslation } from "react-i18next";
 import toast, { Toaster } from "react-hot-toast";
+import React, { useEffect, useState } from "react";
 
 // ---> Css
 import "./contact.css";
@@ -44,6 +45,9 @@ function Contact() {
     AOS.init();
   }, []);
 
+  // eslint-disable-next-line no-unused-vars
+  const { t } = useTranslation();
+
   return (
     <section
       id="contact"
@@ -53,12 +57,11 @@ function Contact() {
         <Toaster />
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-            <h2 className="font-semibold text-center text-white text-[35px] leading-[35px]">
-              Contact Us
+            <h2 className="font-semibold text-center text-white text-[28px] leading-[35px]">
+              {t("contact.title")}
             </h2>
-            <p className="max-w-[500px] w-full mx-auto font-medium text-white text-center my-[50px]">
-              Please! Fill this form out so that you will be able to contact us.
-              This is the very quick way to get us!
+            <p className="max-w-[500px] w-full mx-auto font-medium text-white text-center my-[30px]">
+              {t("contact.text")}
             </p>
             <div className="max-w-[486px] w-full bg-white card mt-[50px] p-5 rounded-lg">
               <form onSubmit={onSubmit} className="mt-[30px]">
@@ -70,14 +73,14 @@ function Contact() {
                       onChange={(e) => setFullName(e.target.value.trim())}
                       type="text"
                       id="floating_standard"
-                      className="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="floating_standard"
                       className="absolute text-base text-gray-500 dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
-                      Full name
+                      {t("contact.full_name")}
                     </label>
                   </div>
                   <div className="relative z-0">
@@ -87,14 +90,14 @@ function Contact() {
                       autoComplete="off"
                       onChange={(e) => setNumber(e.target.value.trim())}
                       id="floating_standard2"
-                      className="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="floating_standard2"
                       className="absolute text-base text-gray-500 dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
-                      Phone number
+                      {t("contact.number")}
                     </label>
                   </div>
                   <div className="relative z-0">
@@ -104,14 +107,14 @@ function Contact() {
                       autoComplete="off"
                       onChange={(e) => setComment(e.target.value.trim())}
                       id="floating_standard3"
-                      className="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="floating_standard3"
                       className="absolute text-base text-gray-500 dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
-                      Comment
+                      {t("contact.comment")}
                     </label>
                   </div>
                 </div>
@@ -119,7 +122,7 @@ function Contact() {
                   className="block mx-auto font-medium text-base leading-[28px] text-white px-[34px] py-1 border border-[#ABABAB] mt-[50px] hover:bg-[#0081c6] duration-200 rounded-md"
                   type="submit"
                 >
-                  Send Info
+                  {t("contact.submit")}
                 </button>
               </form>
             </div>
@@ -145,8 +148,8 @@ function Contact() {
                     src={Office}
                     alt="card-icon"
                   />
-                  <p className="font-medium text-center sm:text-start text-[18px] leading-[21px] text-gray-300 mt-4">
-                    Sergili, Toshkent, Uzbekiston
+                  <p className="font-medium text-center sm:text-start text-[18px] leading-[21px] text-white mt-4">
+                  {t("contact.address")}
                   </p>
                 </li>
                 <li className="sm:max-w-[205px] w-full justify-center py-[45px] px-[15px] bg-[#181818] border-b-[1px]">
@@ -156,10 +159,10 @@ function Contact() {
                     alt="card-icon"
                   />
                   <div className="space-y-[10px] mt-4">
-                    <p className="flex justify-center font-medium text-[18px] leading-[21px] text-gray-300">
+                    <p className="flex justify-center font-medium text-[18px] leading-[21px] text-white">
                       +998 97 013-03-22
                     </p>
-                    <p className="flex justify-center font-medium text-[18px] leading-[21px] text-gray-300">
+                    <p className="flex justify-center font-medium text-[18px] leading-[21px] text-white">
                       +998 90 022-64-56
                     </p>
                   </div>
@@ -173,19 +176,19 @@ function Contact() {
                   <div className="flex sm:block justify-center space-x-[10px] sm:space-x-0 space-y-0 sm:space-y-[10px] mt-[6px]">
                     <Link
                       to="/https://t.me/vistawave_uz"
-                      className="block font-medium text-[18px] leading-[21px] text-gray-300 underline"
+                      className="block font-medium text-[18px] leading-[21px] text-white underline"
                     >
                       Telegram
                     </Link>
                     <Link
                       to="/https://www.instagram.com/vistawave_uz/"
-                      className="block font-medium text-[18px] leading-[21px] text-gray-300 underline"
+                      className="block font-medium text-[18px] leading-[21px] text-white underline"
                     >
                       Instagram
                     </Link>
                     <Link
                       to="/https://www.linkedin.com/company/vistawaveitgroup"
-                      className="block font-medium text-[18px] leading-[21px] text-gray-300 underline"
+                      className="block font-medium text-[18px] leading-[21px] text-white underline"
                     >
                       LinkedIn
                     </Link>

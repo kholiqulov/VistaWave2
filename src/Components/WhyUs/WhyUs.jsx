@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import AOS from "aos";
 
 // ---> Css
@@ -14,6 +15,9 @@ function WhyUs() {
     AOS.init();
   }, []);
 
+  // eslint-disable-next-line no-unused-vars
+  const { t } = useTranslation();
+
   return (
     <section className="container">
       <div className="backImg md:mt-[100px]">
@@ -21,9 +25,9 @@ function WhyUs() {
           <h2
             data-aos="fade-up"
             data-aos-duration="600"
-            className="font-bold text-[25px] leading-[30px] text-white text-center sm:text-start"
+            className="font-bold text-[28px] leading-[30px] text-white text-center sm:text-start"
           >
-            Why Us ?
+            {t("whyus.title")}
           </h2>
           <ul className="flex flex-wrap items-center justify-between mt-[50px] gap-12">
             <li
@@ -37,9 +41,7 @@ function WhyUs() {
                 alt="card-icon"
               />
               <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
-                We deliver customized IT solutions designed to fit your unique
-                business needs, using innovative approaches to drive growth,
-                efficiency, and a competitive edge in your industry. Industry
+                {t("whyus.text1")}
               </p>
             </li>
             <li
@@ -54,10 +56,7 @@ function WhyUs() {
                 alt="card-icon"
               />
               <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
-                Our team’s extensive experience across various industries
-                ensures that we provide solutions tailored to your specific
-                challenges, delivering real value and strategic alignment with
-                your business goals.
+                {t("whyus.text2")}
               </p>
             </li>
             <li
@@ -72,9 +71,7 @@ function WhyUs() {
                 alt="card-icon"
               />
               <p className="font-normal text-[15px] leading-[23px] text-white mt-[15px] sm:mt-[20px]">
-                We offer exceptional customer support, partnering with you every
-                step of the way to ensure our IT solutions continue to meet your
-                needs as your business evolves and grows.
+                {t("whyus.text3")}
               </p>
             </li>
           </ul>

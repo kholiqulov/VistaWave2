@@ -8,6 +8,8 @@ import Close from "../../Assets/Images/close.svg";
 
 // ------> Css
 import "aos/dist/aos.css";
+import "./modal.css";
+
 
 function SiteBar({ isVisible, onClose }) {
   // ------> Use aos animation library
@@ -41,7 +43,7 @@ function SiteBar({ isVisible, onClose }) {
         data-aos-duration="600"
         className={`${
           isVisible ? "left-0" : "-left-[100%] transition-all"
-        } w-[80%] h-full absolute top-0 bg-[#181818] px-5 z-50 rounded-br-[50px]`}
+        } w-[80%] h-full absolute top-0 modal px-5 z-50 rounded-br-[30px]`}
       >
         <div className="mt-4">
           <div className="flex items-center justify-between">

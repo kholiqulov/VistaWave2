@@ -1,5 +1,5 @@
 .footer {
-   background-image: radial-gradient(101.02% 101.02% at 1.2% 0%, #535353 1.04%, #2B2B2B 100%);
+   background-image: linear-gradient(180deg, #1C1C1C 0%, #2C2C2C 100%);
 }
 
 @media only screen and (max-width: 600px) {

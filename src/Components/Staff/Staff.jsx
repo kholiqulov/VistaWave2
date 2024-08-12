@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
 import AOS from "aos";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { FaInstagram } from "react-icons/fa";
 import { PiTelegramLogoThin } from "react-icons/pi";
 import { CiLinkedin } from "react-icons/ci";
@@ -10,7 +11,7 @@ import { FaFacebookF } from "react-icons/fa";
 import "./staff.css";
 
 // ---> Images
-// import Savlat from "../../Assets/Images/savlat.png";
+import Shokhruz from "../../Assets/Images/team/shokhruz.webp";
 import Axror from "../../Assets/Images/team/axror.jpg";
 import Nodir from "../../Assets/Images/team/nodir.png";
 import Nurillo from "../../Assets/Images/team/nurillo.jpg";
@@ -29,110 +30,113 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const datas = [
-  {
-    id: 0,
-    name: "Nodirbek Kholiqulov",
-    image: Nodir,
-    position: "Co-Founder & Team Lead",
-    instagram: "https://www.instagram.com/khn_dev/",
-    telegram: "https://t.me/khn_dev",
-    linkedIn: "https://www.linkedin.com/in/nodirbek-kholiqulov-67a712246/",
-    facebook:
-      "https://www.facebook.com/people/Nodirbek-Xoliqulov/100079926716522/",
-    github: "https://github.com/node-nodir",
-  },
-  {
-    id: 1,
-    name: "Shokhruz Abdugaffarov",
-    image: "",
-    position: "Co-Founder & CEO",
-    instagram: "https://www.instagram.com/_cvrt55/",
-    telegram: "https://t.me/prv33",
-    linkedIn: "https://www.linkedin.com/in/shokhruz-abdugaffarov-260153279/",
-    facebook: "",
-    github: "https://github.com/shokhruz",
-  },
-  {
-    id: 2,
-    name: "Nozimjon Keldiyev",
-    image: Nozim,
-    position: "Full-Stack developer",
-    instagram: "https://www.instagram.com/nozimjon_keldiyev/",
-    telegram: "https://t.me/Nozimjon_Keldiyev",
-    linkedIn: "https://uz.linkedin.com/in/nozimjon-keldiyev-7081bb232",
-    facebook: "",
-    github: "https://github.com/nozimjonpro",
-  },
-  {
-    id: 3,
-    name: "Nurillo Suyunboyev",
-    image: Nurillo,
-    position: "Frontend developer",
-    instagram: "https://www.instagram.com/nurillo.o3/",
-    telegram: "https://t.me/Nurillo_Suyunboyev",
-    linkedIn: "https://www.linkedin.com/in/nurillo-suyunboyev-b30422255/",
-    facebook: "",
-    github: "https://github.com/Nurillo18",
-  },
-  {
-    id: 4,
-    name: "Ilhomjon Burxonov",
-    image: Ilhom,
-    position: "Frontend developer",
-    instagram: "https://www.instagram.com/ilkhamburkhonov/",
-    telegram: "https://t.me/IlkhamBurkhonov",
-    linkedIn: "https://www.linkedin.com/in/ilhomjon-burxonov-/",
-    facebook: "",
-    github: "https://github.com/IlkhamBurkhanov",
-  },
-  {
-    id: 5,
-    name: "Ibrokhim Ismailov",
-    image: Ibrohim,
-    position: "Frontend developer",
-    instagram: "https://www.instagram.com/_ismailov_098/",
-    telegram: "https://t.me/CoderIS",
-    linkedIn: "https://www.linkedin.com/in/ibrokhim-ismoilov-876280221/",
-    facebook: "",
-    github: "https://github.com/IsmailovTech",
-  },
-  {
-    id: 6,
-    name: "Shayboniy Abduvaliev",
-    image: Shayboniy,
-    position: "Product manager",
-    instagram: "https://www.instagram.com/shayboniyshohabduvaliev",
-    telegram: "https://t.me/Shayboniyshoh",
-    linkedIn: "https://www.linkedin.com/in/shayboniyshoh/",
-    facebook: "",
-    github: "https://github.com/Shayboniyshoh/",
-  },
-  {
-    id: 7,
-    name: "Axror Jo'raev",
-    image: Axror,
-    position: "Backend developer",
-    instagram: "https://www.instagram.com/axrorbek_jorayev",
-    telegram: "https://t.me/axrorbekjuraev",
-    linkedIn: "https://www.linkedin.com/in/axror-juraev-6369401b8/",
-    facebook: "",
-    github: "https://github.com/axrorbek041997",
-  },
-  {
-    id: 8,
-    name: "Zarif Sayfiddinov",
-    image: Zarif,
-    position: "Accountant",
-    instagram: "https://www.instagram.com/sayfiddinovzarif/",
-    telegram: "",
-    linkedIn: "",
-    facebook: "",
-    github: "",
-  },
-];
-
 function Me() {
+  // eslint-disable-next-line no-unused-vars
+  const { t } = useTranslation();
+
+  const datas = [
+    {
+      id: 0,
+      name: t("staff.subtitle1"),
+      image: Nodir,
+      position: t("staff.text1"),
+      instagram: "https://www.instagram.com/khn_dev/",
+      telegram: "https://t.me/khn_dev",
+      linkedIn: "https://www.linkedin.com/in/nodirbek-kholiqulov-67a712246/",
+      facebook:
+        "https://www.facebook.com/people/Nodirbek-Xoliqulov/100079926716522/",
+      github: "https://github.com/node-nodir",
+    },
+    {
+      id: 1,
+      name: t("staff.subtitle2"),
+      image: Shokhruz,
+      position: t("staff.text2"),
+      instagram: "https://www.instagram.com/_cvrt55/",
+      telegram: "https://t.me/prv33",
+      linkedIn: "https://www.linkedin.com/in/shokhruz-abdugaffarov-260153279/",
+      facebook: "",
+      github: "https://github.com/shokhruz",
+    },
+    {
+      id: 2,
+      name: t("staff.subtitle3"),
+      image: Nozim,
+      position: t("staff.text3"),
+      instagram: "https://www.instagram.com/nozimjon_keldiyev/",
+      telegram: "https://t.me/Nozimjon_Keldiyev",
+      linkedIn: "https://uz.linkedin.com/in/nozimjon-keldiyev-7081bb232",
+      facebook: "",
+      github: "https://github.com/nozimjonpro",
+    },
+    {
+      id: 3,
+      name: t("staff.subtitle4"),
+      image: Nurillo,
+      position: t("staff.text4"),
+      instagram: "https://www.instagram.com/nurillo.o3/",
+      telegram: "https://t.me/Nurillo_Suyunboyev",
+      linkedIn: "https://www.linkedin.com/in/nurillo-suyunboyev-b30422255/",
+      facebook: "",
+      github: "https://github.com/Nurillo18",
+    },
+    {
+      id: 4,
+      name: t("staff.subtitle5"),
+      image: Ilhom,
+      position: t("staff.text5"),
+      instagram: "https://www.instagram.com/ilkhamburkhonov/",
+      telegram: "https://t.me/IlkhamBurkhonov",
+      linkedIn: "https://www.linkedin.com/in/ilhomjon-burxonov-/",
+      facebook: "",
+      github: "https://github.com/IlkhamBurkhanov",
+    },
+    {
+      id: 5,
+      name: t("staff.subtitle6"),
+      image: Ibrohim,
+      position: t("staff.text6"),
+      instagram: "https://www.instagram.com/_ismailov_098/",
+      telegram: "https://t.me/CoderIS",
+      linkedIn: "https://www.linkedin.com/in/ibrokhim-ismoilov-876280221/",
+      facebook: "",
+      github: "https://github.com/IsmailovTech",
+    },
+    {
+      id: 6,
+      name: t("staff.subtitle7"),
+      image: Shayboniy,
+      position: t("staff.text7"),
+      instagram: "https://www.instagram.com/shayboniyshohabduvaliev",
+      telegram: "https://t.me/Shayboniyshoh",
+      linkedIn: "https://www.linkedin.com/in/shayboniyshoh/",
+      facebook: "",
+      github: "https://github.com/Shayboniyshoh/",
+    },
+    {
+      id: 7,
+      name: t("staff.subtitle8"),
+      image: Axror,
+      position: t("staff.text8"),
+      instagram: "https://www.instagram.com/axrorbek_jorayev",
+      telegram: "https://t.me/axrorbekjuraev",
+      linkedIn: "https://www.linkedin.com/in/axror-juraev-6369401b8/",
+      facebook: "",
+      github: "https://github.com/axrorbek041997",
+    },
+    {
+      id: 8,
+      name: t("staff.subtitle9"),
+      image: Zarif,
+      position: t("staff.text9"),
+      instagram: "https://www.instagram.com/sayfiddinovzarif/",
+      telegram: "",
+      linkedIn: "",
+      facebook: "",
+      github: "",
+    },
+  ];
+
   // ------> Use aos animation library
   useEffect(() => {
     AOS.init();
@@ -144,16 +148,17 @@ function Me() {
       className="container !pt-[100px] !pb-[20px] sm:!pt-[150px] sm:!pb-[20px]"
     >
       <div className="pt-[30px]">
-        <h2 className="font-bold text-[25px] leading-[30px] text-white text-center">
-          Our team members
+        <h2 className="font-bold text-[28px] leading-[30px] text-white text-center">
+          {t("staff.title")}
         </h2>
         <span className="block mx-auto mt-5 justify-center max-w-[125px] w-full h-[1px] bg-[#E2E2E2]"></span>
         <ul className="hidden sm:flex flex-wrap justify-center mt-[130px] gap-y-[100px] gap-x-10">
           {datas.map((data) => (
             <li
+              key={data?.id}
               data-aos="fade-up"
               data-aos-duration="600"
-              className={`userCard max-w-[300px] w-full text-center pb-10 rounded-xl shadow-lg shadow-gray-800`}
+              className={`userCard max-w-[300px] w-full text-center px-3 pb-10 rounded-xl shadow-lg shadow-gray-800`}
             >
               <img
                 className="block mx-auto max-w-[240px] w-full h-[230px] -translate-y-[50px] rounded-xl object-cover"

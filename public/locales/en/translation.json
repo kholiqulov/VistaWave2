@@ -1,0 +1,80 @@
+{
+  "header": {
+    "navbar": {
+      "about": "About us",
+      "services": "Services",
+      "staff": "Staff",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "studio": "Digital studio",
+    "text": "- is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team. Together we face the challenges and celebrate the victories. Our small team is active in the creative community, endlessly interested in what’s next, and generally pleasant to be around.",
+    "see": "See more",
+    "carousel": {
+      "title1": "Custom Software Development.",
+      "text1": "We specialize in building custom software solutions tailored to your business requirements, ensuring seamless integration, enhanced efficiency, and scalable growth through innovative and user-centric technologies.",
+      "title2": "Cloud Solutions and Services.",
+      "text2": "Our cloud solutions enable businesses to leverage scalable, secure, and cost-effective computing resources, enhancing operational efficiency, data security, and collaboration through seamless cloud integration and management.",
+      "title3": "Cybersecurity Expertise.",
+      "text3": "We offer robust cybersecurity services that protect your business from evolving threats, ensuring data integrity, compliance, and peace of mind through comprehensive security assessments and advanced defense strategies."
+    }
+  },
+  "whyus": {
+    "title": "Why Us ?",
+    "text1": "We deliver customized IT solutions designed to fit your unique business needs, using innovative approaches to drive growth, efficiency, and a competitive edge in your industry.",
+    "text2": "Our team’s extensive experience across various industries ensures that we provide solutions tailored to your specific challenges, delivering real value and strategic alignment with your business goals.",
+    "text3": "We offer exceptional customer support, partnering with you every step of the way to ensure our IT solutions continue to meet your needs as your business evolves and grows."
+  },
+  "offer": {
+    "title": "What do we offer?",
+    "subtitle1": "Development of landing pages",
+    "text1": "The landing page is formed in such a way as to briefly and clearly state the essence of the proposal, arouse interest, and convince the client that this is what he wants.",
+    "subtitle2": "Implementation of ERP systems",
+    "text2": "Slate helps you see how many more days you need to work to reach your financial goal.",
+    "subtitle3": "Development of mobile applications",
+    "text3": "Slate helps you see how many more days you need to work to reach your financial goal.",
+    "subtitle4": "IT StartUps",
+    "text4": "A corporate site is a site of a company, its official virtual representation on the Internet.",
+    "subtitle5": "IT consulting",
+    "text5": "Online trade is gaining momentum in Uzbekistan, we create online stores on ready-made engines, as well as unique stores, we connect national and foreign payment methods.",
+    "subtitle6": "Development of landing pages",
+    "text6": "The landing page is formed in such a way as to briefly and clearly state the essence of the proposal, arouse interest, and convince the client that this is what he wants."
+  },
+  "staff": {
+    "title": "Our team members.",
+    "subtitle1": "Nodirbek Kholiqulov",
+    "text1": "Co-Founder & COO",
+    "subtitle2": "Shokhruz Abdugaffarov",
+    "text2": "Co-Founder & CEO",
+    "subtitle3": "Nozimjon Keldiyev",
+    "text3": "Full-Stack developer",
+    "subtitle4": "Nurillo Suyunboyev",
+    "text4": "Frontend developer",
+    "subtitle5": "Ilhomjon Burxonov",
+    "text5": "Frontend developer",
+    "subtitle6": "Ibrokhim Ismailov",
+    "text6": "Frontend developer",
+    "subtitle7": "Shayboniy Abduvaliev",
+    "text7": "Product manager",
+    "subtitle8": "Axror Jo'raev",
+    "text8": "Backend developer",
+    "subtitle9": "Zarif Sayfiddinov",
+    "text9": "Accountant"
+  },
+  "contact": {
+    "title": "Contact us",
+    "text": "Please! Fill this form out so that you will be able to contact us. This is the very quick way to get us!",
+    "full_name": "Full name",
+    "number": "Phone number",
+    "comment": "Comment",
+    "submit": "Send info",
+    "address": "Sergili, Toshkent, Uzbekiston"
+  },
+  "footer": {
+    "left_text": "empowers large enterprises to establish a strong online presence through innovative digital solutions.",
+    "right_title": "Congratulation!",
+    "right_text": "Join our mailing list. We write rarely, but only the best content.",
+    "placeholder": "Your email address"
+  }
+}
