@@ -63,7 +63,7 @@ function Contact() {
             <p className="max-w-[500px] w-full mx-auto font-medium text-white text-center my-[30px]">
               {t("contact.text")}
             </p>
-            <div className="max-w-[486px] w-full bg-white card mt-[50px] p-5 rounded-lg">
+            <div className="max-w-[486px] w-full bg-white userCard mt-[50px] p-5 rounded-lg shadow-xl shadow-gray-800">
               <form onSubmit={onSubmit} className="mt-[30px]">
                 <div className="space-y-7">
                   <div className="relative z-0">

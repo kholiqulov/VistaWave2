@@ -21,7 +21,7 @@ function Footer() {
 
   return (
     <footer className="footer mt-[100px] py-7">
-      <div className="container flex flex-col sm:flex-row sm:items-center items-start sm:justify-between md:space-x-10">
+      <div className="container flex flex-wrap items-start lg:items-center justify-between space-y-7 md:space-y-10 lg:space-y-0 lg:space-x-10">
         <div>
           <Link to="/" className="block">
             <img
@@ -35,7 +35,7 @@ function Footer() {
             {t("footer.left_text")}
           </p>
         </div>
-        <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-[50px] gap-y-5 mt-[30px] sm:mt-0">
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-x-[50px] gap-y-2 mt-[30px] md:mt-0">
           <li>
             <a className="font-normal text-base text-white" href="#about">
               {t("header.navbar.about")}
@@ -57,7 +57,7 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <div className="sm:max-w-[282px] w-full mt-[30px] sm:mt-0">
+        <div className="md:max-w-[282px] w-full mt-[30px] md:mt-0">
           <h3 className="font-semibold text-base text-white">
             {t("footer.right_title")}
           </h3>

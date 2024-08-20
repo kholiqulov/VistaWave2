@@ -61,7 +61,7 @@ function Hero() {
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay="200"
-              className="py-[10px] px-[30px] border border-[#ABABAB] hover:bg-[#0081c6] block mx-auto lg:m-0 w-fit !mt-10 text-lg text-white rounded-lg"
+              className="py-[10px] px-[30px] border border-[#ABABAB] hover:bg-[#0081c6] transition-all !duration-300 block mx-auto lg:m-0 w-fit !mt-10 text-lg text-white rounded-lg"
               href="/"
             >
               {t("hero.see")}

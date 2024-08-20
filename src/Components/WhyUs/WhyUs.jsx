@@ -20,8 +20,8 @@ function WhyUs() {
 
   return (
     <section className="container">
-      <div className="backImg md:mt-[100px]">
-        <div className="insertBg p-10">
+      <div className="backImg md:mt-[100px] rounded-xl">
+        <div className="p-10">
           <h2
             data-aos="fade-up"
             data-aos-duration="600"

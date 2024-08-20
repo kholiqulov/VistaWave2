@@ -9,19 +9,3 @@
       box-shadow: none
    }
  }
-
-.insertBg {
-   background-image: url("../../Assets/Images/whyus-bg.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center right;
-}
-
-@media only screen and (max-width: 600px) {
-   .insertBg {
-      background-image: url("../../Assets/Images/whyus-bg-mobile.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center right;
-   }
-}

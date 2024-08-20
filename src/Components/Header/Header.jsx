@@ -85,6 +85,44 @@ function Header() {
                 alt="logo"
               />
             </Link>
+          </div>
+          <nav className="hidden md:block">
+            <ul className="flex items-center space-x-[21px]">
+              <li className="nav_item group">
+                <a
+                  href="#about"
+                  className="nav_link font-serif text-lg text-white tracking-[0.48px] group-hover:text-[#0081c6] transition-all duration-200"
+                >
+                  {t("header.navbar.about")}
+                </a>
+              </li>
+              <li className="nav_item group">
+                <a
+                  href="#services"
+                  className="nav_link font-serif text-lg text-white tracking-[0.48px] group-hover:text-[#0081c6] transition-all duration-200"
+                >
+                  {t("header.navbar.services")}
+                </a>
+              </li>
+              <li className="nav_item group">
+                <a
+                  href="#staff"
+                  className="nav_link font-serif text-lg text-white tracking-[0.48px] group-hover:text-[#0081c6] transition-all duration-200"
+                >
+                  {t("header.navbar.staff")}
+                </a>
+              </li>
+              <li className="nav_item group">
+                <a
+                  href="#contact"
+                  className="nav_link font-serif text-lg text-white tracking-[0.48px] group-hover:text-[#0081c6] transition-all duration-200"
+                >
+                  {t("header.navbar.contact")}
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="flex items-center justify-between space-x-10">
             <button
               id="wrapper"
               onClick={() => setDrop(!drop)}
@@ -132,50 +170,14 @@ function Header() {
                 </ul>
               ) : null}
             </button>
+            <a
+              className="hidden lg:flex items-center font-serif text-base text-white tracking-[0.48px]"
+              href="tel:+998 933354018"
+            >
+              <img className="w-5 h-5 mr-2" src={Call} alt="call" />
+              +998 97 013-03-22
+            </a>
           </div>
-          <nav className="hidden md:block">
-            <ul className="flex items-center space-x-[21px]">
-              <li className="nav_item">
-                <a
-                  href="#about"
-                  className="nav_link font-serif text-lg text-white tracking-[0.48px]"
-                >
-                  {t("header.navbar.about")}
-                </a>
-              </li>
-              <li className="nav_item">
-                <a
-                  href="#services"
-                  className="nav_link font-serif text-lg text-white tracking-[0.48px]"
-                >
-                  {t("header.navbar.services")}
-                </a>
-              </li>
-              <li className="nav_item">
-                <a
-                  href="#staff"
-                  className="nav_link font-serif text-lg text-white tracking-[0.48px]"
-                >
-                  {t("header.navbar.staff")}
-                </a>
-              </li>
-              <li className="nav_item">
-                <a
-                  href="#contact"
-                  className="nav_link font-serif text-lg text-white tracking-[0.48px]"
-                >
-                  {t("header.navbar.contact")}
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a
-            className="hidden lg:flex items-center font-serif text-base text-white tracking-[0.48px]"
-            href="tel:+998 933354018"
-          >
-            <img className="w-5 h-5 mr-2" src={Call} alt="call" />
-            +998 97 013-03-22
-          </a>
           <div className="flex sm:hidden items-center justify-center space-x-5">
             <button
               id="wrapper"
