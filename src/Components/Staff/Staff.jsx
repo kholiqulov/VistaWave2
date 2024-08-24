@@ -20,6 +20,7 @@ import Shayboniy from "../../Assets/Images/team/shayboniyshoh.jpg";
 import Zarif from "../../Assets/Images/team/zarif.jpg";
 import Ilhom from "../../Assets/Images/team/ilhom.jpg";
 import Ibrohim from "../../Assets/Images/team/ibrokhim.jpg";
+import Shavkat from "../../Assets/Images/team/shavkat.jpg";
 
 // ------> Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -134,6 +135,17 @@ function Me() {
       linkedIn: "",
       facebook: "",
       github: "",
+    },
+    {
+      id: 9,
+      name: t("staff.subtitle10"),
+      image: Shavkat,
+      position: t("staff.text10"),
+      instagram: "https://www.instagram.com/_moon737/",
+      telegram: "https://t.me/shavkat_s777",
+      linkedIn: "https://www.linkedin.com/in/shavkat-sadulloyev-5262a6280/",
+      facebook: "",
+      github: "https://github.com/shavkat7",
     },
   ];
 
