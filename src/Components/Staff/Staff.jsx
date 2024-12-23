@@ -38,6 +38,17 @@ function Me() {
   const datas = [
     {
       id: 0,
+      name: t("staff.subtitle2"),
+      image: Shokhruz,
+      position: t("staff.text2"),
+      instagram: "https://www.instagram.com/_cvrt55/",
+      telegram: "https://t.me/prv33",
+      linkedIn: "https://www.linkedin.com/in/shokhruz-abdugaffarov-260153279/",
+      facebook: "",
+      github: "https://github.com/shokhruz",
+    },
+    {
+      id: 1,
       name: t("staff.subtitle1"),
       image: Nodir,
       position: t("staff.text1"),
@@ -47,17 +58,6 @@ function Me() {
       facebook:
         "https://www.facebook.com/people/Nodirbek-Xoliqulov/100079926716522/",
       github: "https://github.com/node-nodir",
-    },
-    {
-      id: 1,
-      name: t("staff.subtitle2"),
-      image: Shokhruz,
-      position: t("staff.text2"),
-      instagram: "https://www.instagram.com/_cvrt55/",
-      telegram: "https://t.me/prv33",
-      linkedIn: "https://www.linkedin.com/in/shokhruz-abdugaffarov-260153279/",
-      facebook: "",
-      github: "https://github.com/shokhruz",
     },
     {
       id: 2,
